@@ -1,0 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+
+body{
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.topbar{
+  padding-top:1em;
+  text-align:center;
+  font-family:serif;
+  background-color:#282827;
+}
+.topbar h1{
+  color:#DCD8CF;
+}
+.topbar{
+  color:#E25D33;
+}
