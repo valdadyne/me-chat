@@ -29,10 +29,9 @@ footer{
   color:#E25D33;
 }
 #message{
-  height:20%;
-  background-color:#DCD8CF;
+  color:#E25D33;
+  background-color:#fff;
 }
 #history{
-  height:50%;
   background-color:#444;
 }

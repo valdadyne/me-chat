@@ -41,10 +41,24 @@
   <section>
   <hr>
   <div class="row">
-    <div class="small-12 columns" id="message">
+    <div class="small-6 columns" id="message">
+    <form>
+      Select Chat-Room:
+        <input type="text" name="room" list="chat-rooms">
+          <datalist id="chat-rooms">
+            <option> Public</option>
+            <option> Private</option>
+          </datalist>
+        </input>
+      Enter Message:
+        <textarea rows="4" name"message"cols="50">
+          Enter message here...</textarea>
+      <input type="submit" value="Submit"></input>
+    </form>
+    </div>
+    <div class="small-6 columns" id="credentials">
     </div>
     <div class="small-12 columns" id="history">
-    </div>
   </div>
   <hr>
   </section>
