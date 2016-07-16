@@ -5,9 +5,6 @@ body{
   margin: 0;
   padding: 0;
 }
-hr{
-  width:100%;
-}
 header{
   height:16%;
   background-color:#282827;
@@ -31,6 +28,11 @@ footer{
 .topbar p{
   color:#E25D33;
 }
-.content{
-  height:
+#message{
+  height:20%;
+  background-color:#DCD8CF;
+}
+#history{
+  height:50%;
+  background-color:#444;
 }
