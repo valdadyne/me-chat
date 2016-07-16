@@ -5,16 +5,32 @@ body{
   margin: 0;
   padding: 0;
 }
-
+hr{
+  width:100%;
+}
+header{
+  height:16%;
+  background-color:#282827;
+}
+section{
+  height:70%;
+}
+footer{
+  height:10%;
+  background-color:#282827;
+}
 .topbar{
   padding-top:1em;
+  height:5em;
   text-align:center;
   font-family:serif;
-  background-color:#282827;
 }
 .topbar h2{
   color:#DCD8CF;
 }
 .topbar p{
   color:#E25D33;
+}
+.content{
+  height:
 }
