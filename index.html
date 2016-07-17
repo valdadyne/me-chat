@@ -31,14 +31,19 @@
 
 </head>
 <body>
-  <header>
+<header>
     <div class = "topbar">
-      <h2>ME-CHAT</h2><p>Conversations made easier</p>
-    </div>
-  </header>
+      <div row>
+          <div class="medium-8 small-9 columns" id="title">
+            <h2>ME-CHAT</h2><p>Conversations made easier</p>
+          </div>
+          <div class="medium-4 small-3 columns" id="credentials">
+            <p>LOGIN<br>SIGN-UP</p>
+          </div>
+      </div>
+</header>
 
-
-  <section>
+<section>
   <hr>
   <div class="row">
     <div class="medium-6 small-12 columns" id="message">
@@ -51,21 +56,20 @@
           </datalist>
         </input>
       Enter Message:
-        <textarea rows="4" name"message"cols="50">
+        <textarea rows="4" name"message"cols="40">
           Enter message here...</textarea>
       <input type="submit" value="Submit"></input>
     </form>
     </div>
-    <div class="medium-6 small-12 columns" id="history">
-    <box class="past"></box>
-  </div>
-  <hr>
-  </section>
+    <div class="medium-6 small-12 columns">
+      <div id="history"><box class="past"></box></div>
+    </div>
+</div>
+<hr>
+</section>
 
-
-  <footer>
-  </footer>
-
+<footer>
+</footer>
 
 </body>
 </html>

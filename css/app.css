@@ -2,6 +2,8 @@
 
 body{
   width:100%;
+  font-size: 90%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -13,7 +15,8 @@ section{
   height:70%;
 }
 footer{
-  height:10%;
+  clear: both;
+  height: 10%;
   background-color:#282827;
 }
 .topbar{
@@ -28,12 +31,24 @@ footer{
 .topbar p{
   color:#E25D33;
 }
+#credentials{
+  text-align: left;
+}
 #message{
   color:#E25D33;
   background-color:#fff;
 }
 #history{
   margin-top: 0.5em;
-  height:15em;
-  background-color:#444;
+  padding: 0;
+  height:20em;
+  background-color:#DCD8CF;
+  color:#E25D33;
+}
+
+@media only screen and (max-width: 440px) {
+    /* For mobile phones: */
+    body{font-size: 80%;}
+    .topbar{height:2em;}
+    #history{ height:12em;}
 }
