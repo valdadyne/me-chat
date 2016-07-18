@@ -13,22 +13,8 @@
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
   <!--Links to javascript-->
-  <script src="js/jquery.js"></script>
-  <script src="js/what-input.js"></script>
-  <script src="js/foundation.min.js"></script>
   <script src="js/app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDE2ldnqci7tE0wFOv2QpUm0GUqG6I_s4w",
-    authDomain: "me-chat.firebaseapp.com",
-    databaseURL: "https://me-chat.firebaseio.com",
-    storageBucket: "",
-  };
-  firebase.initializeApp(config);
-</script>
-
+  <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 </head>
 <body>
 <header>
@@ -37,9 +23,9 @@
           <div class="medium-8 small-9 columns" id="title">
             <h2>ME-CHAT</h2><p>Conversations made easier</p>
           </div>
-          <div class="medium-4 small-3 columns" id="credentials">
+          <!--<div class="medium-4 small-3 columns" id="credentials">
             <p>LOGIN<br>SIGN-UP</p>
-          </div>
+          </div> -->
       </div>
 </header>
 
@@ -47,7 +33,7 @@
   <hr>
   <div class="row">
     <div class="medium-6 small-12 columns" id="message">
-    <form name="send">
+    <form onload="getMsg()"name="send">
       Chat-Room:
         <input type="text" name="room" list="chat-rooms" placeholder="Select Chat-Room..."id="room">
           <datalist id="chat-rooms">
@@ -57,19 +43,11 @@
         </input>
       Message:
         <textarea rows="4" name"msg"cols="40"placeholder="Enter message here..." id="msg"></textarea>
-      <button type="button"onclick="sendMsg()"id="submit">Submit</button>
+      <button type="button" onclick="sendMsg()"id="submit">Submit</button>
     </form>
     </div>
     <div class="medium-6 small-12 columns">
-      <div id="history">
-        <box>
-          <form>
-          <select id="history" size="8">
-            <option>we</options>
-          </select>
-        </form>
-        </box>
-      </div>
+      <div id="history"></div>
     </div>
 </div>
 <hr>
@@ -77,6 +55,11 @@
 
 <footer>
 </footer>
+
+<!-- More Links to javascript-->
+<script src="js/jquery.js"></script>
+<script src="js/what-input.js"></script>
+<script src="js/foundation.min.js"></script>
 
 </body>
 </html>

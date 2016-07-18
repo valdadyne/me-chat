@@ -2,7 +2,6 @@
 
 body{
   width:100%;
-  font-size: 90%;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -16,7 +15,7 @@ section{
 }
 footer{
   clear: both;
-  height: 10%;
+  height: 15%;
   background-color:#282827;
 }
 .topbar{
