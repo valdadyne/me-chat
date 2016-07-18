@@ -47,22 +47,29 @@
   <hr>
   <div class="row">
     <div class="medium-6 small-12 columns" id="message">
-    <form>
-      Select Chat-Room:
-        <input type="text" name="room" list="chat-rooms">
+    <form name="send">
+      Chat-Room:
+        <input type="text" name="room" list="chat-rooms" placeholder="Select Chat-Room..."id="room">
           <datalist id="chat-rooms">
             <option> Public</option>
             <option> Private</option>
           </datalist>
         </input>
-      Enter Message:
-        <textarea rows="4" name"message"cols="40">
-          Enter message here...</textarea>
-      <input type="submit" value="Submit"></input>
+      Message:
+        <textarea rows="4" name"msg"cols="40"placeholder="Enter message here..." id="msg"></textarea>
+      <button type="button"onclick="sendMsg()"id="submit">Submit</button>
     </form>
     </div>
     <div class="medium-6 small-12 columns">
-      <div id="history"><box class="past"></box></div>
+      <div id="history">
+        <box>
+          <form>
+          <select id="history" size="8">
+            <option>we</options>
+          </select>
+        </form>
+        </box>
+      </div>
     </div>
 </div>
 <hr>
