@@ -2,7 +2,7 @@ function sendMsg(){
 
   //assign form elements variables
 
-  var myusername = prompt("Enter your name");
+  var myusername = document.querySelector('#username').value;
   var myroom = document.querySelector('#room').value;
   var mymessage = document.querySelector('#msg').value;
 
@@ -29,7 +29,3 @@ function displayChatMessage(username,chatroom, message) {
   $('<div/>').text(message).prepend($('<em/>').text(chatroom+'/'+username + ': ')).appendTo($('#history'));
   $('#history')[0].scrollTop = $('#history')[0].scrollHeight;
 };
-
-function login(u){
-
-}

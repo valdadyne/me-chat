@@ -15,7 +15,7 @@ section{
 }
 footer{
   clear: both;
-  height: 15%;
+  height: 10%;
   background-color:#282827;
 }
 .topbar{
@@ -40,11 +40,14 @@ footer{
 #history{
   margin-top: 0.5em;
   padding: 0;
-  height:15em;
+  height:22em;
   background-color:#DCD8CF;
-  color:#E25D33;
+  font-family: 'Oswald:400' 'Serif';
+  color: #E25D33;;
 }
-
+#submit{
+  background-color:#E25D33;
+}
 @media only screen and (max-width: 440px) {
     /* For mobile phones: */
     body{font-size: 80%;}

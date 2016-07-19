@@ -31,6 +31,8 @@
   <div class="row">
     <div class="medium-6 small-12 columns" id="message">
     <form onload="getMsg()"name="send">
+      Username:
+        <input type="text" placeholder="Enter Username" id="username"></input>
       Chat-Room:
         <input type="text" name="room" list="chat-rooms" placeholder="Select Chat-Room..."id="room">
           <datalist id="chat-rooms">
@@ -40,7 +42,7 @@
         </input>
       Message:
         <textarea rows="4" name"msg"cols="40"placeholder="Enter message here..." id="msg"></textarea>
-      <button type="button" onclick="sendMsg()"id="submit">Submit</button>
+      <button type="button" class="success button" onclick="sendMsg()"id="submit">Submit</button>
     </form>
     </div>
     <div class="medium-6 small-12 columns">
